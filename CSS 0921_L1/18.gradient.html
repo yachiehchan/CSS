@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        .box {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .grad1 {
+            background: linear-gradient(red, orange, yellow, green, blue);
+        }
+
+        .grad2 {
+            background: linear-gradient(to right, red, orange, yellow, green, blue);
+        }
+
+        .grad3 {
+            background: linear-gradient(145deg, red, orange, yellow, green, blue);
+        }
+
+        .grad4 {
+            background: linear-gradient(to left, rgba(0, 0, 225, 0), rgba(0, 0, 225, 1));
+        }
+
+        .grad5 {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(150deg, rgba(255, 0, 0, 8), rgba(255, 0, 0, 0)70.71%), linear-gradient(210deg, rgba(0, 255, 0, 8), rgba(0, 255, 0, 0)70.71%), linear-gradient(336deg, rgba(0, 0, 255, 8), rgba(0, 0, 255, 0)70.71%);
+        }
+
+        .grad6 {
+            background: linear-gradient(to right, rgb(241, 111, 111, 0.5) 50%,
+                    rgb(240, 240, 128, 0.5) 50%),
+                linear-gradient(pink 50%, yellow 50%);
+            background-size: 20px 20px;
+        }
+
+        .grad7 {
+            background: repeating-linear-gradient(rgb(252, 48, 156), hotpink 25%);
+        }
+
+        h1 {
+            font-size: 100px;
+            background: linear-gradient(145deg, red 10%, orange, yellow, green, blue);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box grad1"></div>
+    <div class="box grad2"></div>
+    <div class="box grad3"></div>
+    <div class="box grad4"></div>
+    <div class="box grad5"></div>
+    <div class="box grad6"></div>
+    <div class="box grad7"></div>
+    <div class="box grad8"></div>
+
+    <h1>Hello World</h1>
+</body>
+
+</html>

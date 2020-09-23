@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-size</title>
+    <style>
+        .city {
+            width: 800px;
+            height: 250px;
+            background: url(./images/CSS.selection/images/city.jpg) center center no-repeat;
+            /* center 25% no-repeat (調整y軸百分比來上下移動圖片位置) */
+            background-size: 300px 300px;
+            outline: 1px solid #ccc;
+        }
+
+        .contain {
+            background-size: contain;
+            /* 有限範圍內呈現完整圖片 */
+        }
+
+        .cover {
+            background-size: cover;
+            /* 圖片填滿整個區塊, 較常使用 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="city"></div>
+    <div class="city contain"></div>
+    <div class="city cover"></div>
+</body>
+
+</html>
+
+<!-- 要放圖片不一定要用img, 可以用div做background放url圖片 -->

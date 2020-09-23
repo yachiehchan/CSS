@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex4</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .card {
+            width: 220px;
+            height: 400px;
+            background-color: #ccc;
+            border-radius: 10px;
+            text-align: center;
+            /* padding-top: 50px; */
+            margin: 20px auto;
+            box-shadow: 3px 3px 4px #111;
+            overflow: hidden;
+            /* 隱藏超出卡片之外的尖角>>使其變圓角 */
+            position: relative;
+        }
+
+        .banner {
+            height: 100px;
+            background: url(./images/CSS.selection/images/flowers.jpg);
+            background-size: cover;
+            /* cover 填滿整個所需的區塊並裁去多餘的圖片 */
+        }
+
+        .figure {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: 50px;
+            left: 58px;
+            /* left: calc(50%-50px); */
+            /* margin: -50px auto 0; */
+        }
+
+        .figure img {
+            width: 100%;
+            /* 讓圖片的寬等於圓形遮罩 */
+
+        }
+
+        h3 {
+            border-bottom: 3px solid #aaa;
+            width: 80%;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        .container {
+            border: 20px solid transparent;
+        }
+
+
+
+        .button {
+            display: block;
+            border-radius: 10px;
+            background: linear-gradient(red, pink);
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background: rgb(131, 29, 29);
+            cursor: pointer;
+        }
+
+        .content {
+            margin: 10px 5px 5px;
+            padding-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="banner"></div>
+
+        <div class="figure">
+            <img src="images/ex1_pic1.jpg">
+        </div>
+        <div class="content">
+        </div>
+
+        <div class="container">
+            <h3>Jean</h3>
+            <p>Hello, nice to meet you.</p>
+        </div>
+
+        <a role="button" class="button">Follow me</a>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

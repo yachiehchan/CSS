@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box shadow</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #afa;
+            transition: .5s;
+            float: left;
+            margin: 10px;
+        }
+
+        .box1:hover {
+            box-shadow: 10px 10px 10px #000;
+        }
+
+        .box2:hover {
+            box-shadow: 2px 3px 10px 2px rgb(82, 52, 52, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+</body>
+
+</html>

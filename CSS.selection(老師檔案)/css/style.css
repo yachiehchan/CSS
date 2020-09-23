@@ -1,0 +1,26 @@
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #afa; 
+    float: left;
+    margin: 10px;
+}
+
+.box1{
+    border-radius: 10px 20px 30px 40px;
+}
+
+.box2{
+    background-color: #faf;
+    border-radius: 10px 40px;
+}   
+
+.box3{
+    width: 100px;
+    height: 100px;
+    border-radius: 100% 0 0 0;
+}
+
+.box4{
+    
+}

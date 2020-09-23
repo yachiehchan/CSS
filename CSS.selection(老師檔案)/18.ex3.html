@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+    <style>
+        body {
+            background-color: #ccc;
+        }
+
+        .container {
+            position: relative;
+        }
+
+        .background {
+            position: relative;
+            height: 500px;
+            width: 100%;
+            background: url("images/Muse\ du\ Louvre.jpg") center center no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            background-color: #fff;
+            width: 100%;
+            opacity: 0;
+            transition: .5s;
+        }
+
+        .container:hover .background {
+            opacity: .5;
+        }
+
+        .container:hover h1 {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<div class="container">
+    <div class="background"></div>
+    <h1>Paris</h1>
+</div>
+
+
+
+
+</body>
+
+</html>
